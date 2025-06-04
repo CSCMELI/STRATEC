@@ -1279,7 +1279,7 @@ section,
 
 /*--------------------------------------------------------------
 # Widgets
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .widgets-container {
   margin: 60px 0 30px 0;
 }
@@ -1448,7 +1448,7 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
-}
+}*/
 
 html {
     scroll-behavior: smooth;
