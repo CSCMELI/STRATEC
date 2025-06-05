@@ -1,41 +1,46 @@
 # 🌐 STRATEC - Sitio Web Corporativo
 
-Sitio web institucional de STRATEC, empresa de soluciones tecnológicas.
+Sitio web institucional de **STRATEC**, empresa de soluciones tecnológicas.
+
+🔗 **Demo en vivo**: [https://<tu-usuario>.github.io/stratec-website](https://<tu-usuario>.github.io/stratec-website)
 
 ## 📄 Descripción
 
-Este sitio está hecho en HTML5 y CSS3 con Bootstrap y otras librerías para mostrar los servicios, clientes y contacto de la empresa.
+Este sitio está construido con HTML5, CSS3 y Bootstrap 5, integrando librerías modernas como AOS y Swiper para ofrecer una experiencia visual fluida.
 
-## 🧱 Estructura
+## 🧱 Estructura del Proyecto
 
-- `index.html`: Página principal con todas las secciones.
-- `/assets`: Carpeta de recursos (imágenes, CSS, JS).
-  - `/img`: Imágenes del sitio.
-  - `/css`: Hojas de estilo.
-  - `/js`: Scripts JS (si se usan).
-  - `/vendor`: Librerías externas (Bootstrap, AOS, Swiper, etc).
+├── index.html
+└── /assets
+├── /img
+├── /css
+├── /js
+└── /vendor
 
-## 🚀 Tecnologías usadas
+
+## 🚀 Tecnologías Utilizadas
 
 - HTML5
 - CSS3
 - Bootstrap 5
-- AOS (animaciones)
-- Swiper.js (carrusel)
+- AOS (animaciones al hacer scroll)
+- Swiper.js (carruseles)
 - Google Fonts
-- Google Maps y Google Forms embed
+- Google Maps y Google Forms (embebidos)
 
-## 🖥️ ¿Cómo abrirlo?
+## 📍 Información de Contacto
 
-1. Abre `index.html` en tu navegador.
-2. Asegúrate de tener conexión para que se carguen los recursos externos como Google Fonts o AOS.
+- 📍 **Dirección**: Normalistas #462, Guadalajara, Jalisco
+- 📧 **Correo**: [angelalbertocordovaenriquez@gmail.com](mailto:angelalbertocordovaenriquez@gmail.com)
+- 📱 **WhatsApp**: [Iniciar chat](https://wa.me/523340980766)
 
-## 📍 Información de contacto
+## 🖥️ ¿Cómo visualizar el sitio localmente?
 
-- **Ubicación**: Normalistas #462, Guadalajara, Jalisco
-- **Correo**: angelalbertocordovaenriquez@gmail.com
-- **WhatsApp**: [Click para abrir](https://wa.me/523340980766)
+1. Descarga o clona el repositorio.
+2. Abre `index.html` con tu navegador.
+3. Asegúrate de tener conexión a Internet para cargar las librerías externas correctamente.
 
-## 📌 Autor
+---
 
-Desarrollado por **STRATEC**
+© 2025 STRATEC. Todos los derechos reservados.
+
