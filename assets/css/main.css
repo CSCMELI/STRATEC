@@ -11,7 +11,7 @@
 # Ayuda: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 :root {
-  --background-color: #6009f7; /* O el color de fondo que prefieras */
+  --background-color: #0a0a0a; /* O el color de fondo que prefieras */
   --accent-color: #057af8;     /* El color del spinner */
   --contrast-color: #e4d613;   /* Por si usas más elementos */
 }
@@ -96,9 +96,25 @@ h6 {
 }
 
 /* Navbar background color */
-#header {
-  background-color: #ffffff; /* <-- Puedes cambiar este color */
+.header {
+  background-color: transparent; /* <-- Puedes cambiar este color */
+  transition: all 0.4s ease;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 997;
 }
+
+/* Al hacer scroll: fondo negro */
+#header.scrolled {
+  background-color: rgba(0, 0, 0, 0.95); /* negro con transparencia opcional */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* opcional */
+  transition: background-color 0.4s ease;
+}
+
+
+
 
 /* Estilo del nombre del sitio*/
 .nombredelsitio {
@@ -139,8 +155,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 100px;
+ 
 }
 
 .header .logo h1 {
@@ -152,21 +168,22 @@ h6 {
   text-transform: uppercase;
 }
 
-.header .btn-getstarted,
-.header .btn-getstarted:focus {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  font-size: 14px;
-  padding: 8px 25px;
-  margin: 0 0 0 30px;
+.btn-empezar {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* azul Bootstrap, cámbialo si quieres otro color */
+  border: none;
   border-radius: 50px;
-  transition: 0.3s;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.header .btn-getstarted:hover,
-.header .btn-getstarted:focus:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+.btn-empezar:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 @media (max-width: 1200px) {
@@ -376,6 +393,77 @@ h6 {
     display: block;
   }
 }
+
+/* Siempre oculto por defecto */
+#navmenu {
+  display: none;
+}
+
+/* Mostrado cuando se activa */
+#navmenu.active {
+  display: block;
+  position: absolute;
+  top: 70px; /* debajo del header */
+  right: 0;
+  background: white;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+/* Estilo del texto Menú */
+.menu-text {
+  font-weight: bold;
+  color: #000;
+  font-size: 16px;
+}
+
+/* Opcional: animación o estilo del botón hamburguesa */
+.mobile-nav-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #000;
+}
+
+.mobile-menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Siempre mostrar el botón y texto */
+.mobile-nav-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #ec1111;
+  display: inline-block;
+}
+
+.menu-text {
+  font-weight: bold;
+  color: #d70d0d;
+  font-size: 16px;
+}
+
+/* Ocultar el menú por defecto */
+#navmenu {
+  display: none;
+}
+
+/* Mostrar cuando se active */
+#navmenu.active {
+  display:flex;
+  position:absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  z-index: 999;
+}
+
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -635,7 +723,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 80vh;
+  min-height: 200vh;
   position: relative;
   padding: 120px 0 60px 0;
   display: flex;

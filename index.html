@@ -32,13 +32,13 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header  id="header" class="header fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="nombredelsitio">STRATEC</h1>
+       <img src="assets/img/sf1.png" alt="">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -51,7 +51,22 @@
         </ul>
       
       </nav>
-      <button class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation" aria-expanded="false"></button>
+   <nav id="navmenu" class="navmenu">
+  <ul>
+    <li><a href="#hero" class="active">Inicio</a></li>
+    <li><a href="#about">Nosotros</a></li>
+    <li><a href="#customers">Clientes</a></li>
+    <li><a href="#services">Servicios</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+</nav>
+
+<div class="mobile-menu-toggle d-flex align-items-center">
+  <span class="menu-text me-2">Menú</span>
+  <button class="mobile-nav-toggle bi bi-list" aria-label="Toggle navigation" aria-expanded="false"></button>
+</div>
+
+
 
       
 
@@ -60,26 +75,14 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+   <!-- Hero Section -->
+<section id="hero" class="hero section dark-background" style="background-image: url('assets/img/cta/fondo.webp'); background-size: cover; background-position: center; height: 100vh;">
+  <div class="container d-flex align-items-center justify-content-center h-100">
+   <!-- Botón Empezar -->
+    <a href="#about" class="btn-empezar">Empezar</a>
+  </div>
+</section>
 
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 hero-img" data-aos="zoom-out" data-aos-delay="200">
-           <h2>Impulsamos la Innovacion Tecnologica</h2>
-           <p>Desarrollamos soluciones digitales y tecnologicas adaptadas a las necesidades de cada empresa, optimizando procesos y recursos.</p>
-            <div class="d-flex">
-              <a href="#about" class="btn-get-started">Empezar</a>
-              
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/sf2.png" class="img-fluid animated" alt="">
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
 
       <section id="about" class="about section">
   <div class="container section-title" data-aos="fade-up">
